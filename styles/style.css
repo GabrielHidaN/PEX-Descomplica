@@ -4,16 +4,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 ul {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
+
 img {
   width: 100%;
   height: auto;
 }
+
 /*====  VARIABLES ============================ */
 :root {
   --header-height: 4.5rem;
@@ -21,8 +25,8 @@ img {
   /* colors */
   --hue: 159;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color: hsl(80.36deg 51.85% 57.65%);
+  --base-color-second: hsl(80deg 48.75% 85.9%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
   --text-color: hsl(0 0% 46%);
@@ -93,7 +97,7 @@ body {
 
 .grid {
   display: grid;
-  gap: 2rem;
+  gap: 10rem;
 }
 
 .section {
