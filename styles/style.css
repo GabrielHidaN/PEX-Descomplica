@@ -97,7 +97,7 @@ body {
 
 .grid {
   display: grid;
-  gap: 10rem;
+  gap: 5rem;
 }
 
 .section {
@@ -536,7 +536,7 @@ footer .social a:hover {
   }
 
   .section {
-    padding: 10rem 0;
+    padding: 5rem 0;
   }
 
   .section header,
