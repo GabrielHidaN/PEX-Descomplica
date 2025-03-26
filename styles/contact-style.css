@@ -1,0 +1,8 @@
+ /* arrrumar a responsividade */
+
+.main-contacts{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding-left: 30vh;
+}
