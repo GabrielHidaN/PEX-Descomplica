@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 
+
+
 ul {
   list-style: none;
 }
@@ -724,3 +726,4 @@ footer .social a:hover {
 .text p {
   margin-bottom: 30px; /* A ajustar */
 }
+
