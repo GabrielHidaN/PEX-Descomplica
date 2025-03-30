@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReciclarEtransformar - Aprenda a Reciclar Corretamente</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/style-papel.css">
+  <link rel="stylesheet" href="styles/style-plastico.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    .img {
+      width: 100%;
+      height: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <img src="/assets/fotos/recicle.jpg" width="80" alt="Logo reciclagem">
+      <div class="logo">
+        <h1>Transforme</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Início</a></li>
+          <li><a href="porque-reciclar.html">Por que Reciclar?</a></li>
+          <li><a href="aprenda-separar.html">Aprenda a Separar</a></li>
+          <li><a href="onde-descartar.html">Onde Descartar</a></li>
+          <li><a href="atividades.html">Atividades</a></li>
+          <li><a href="professor.html">Zona do Professor</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="mapa-destaque destaque-categorias">
+      <div class="container">
+        <h2>Aprenda a Seperar.</h2>
+        <img src="/assets/fotos/Garbage sorting set.svg " class="img" alt="Crianças reciclando">
+        <div class="container">
+        </div>
+    </section>
+
+    <section class="intro" id="papel">
+      <h2>Por que reciclar papel?</h2>
+      <p>A reciclagem de papel é uma das formas mais simples e eficazes de ajudar o meio ambiente. Para cada tonelada de
+        papel reciclado, economizamos:</p>
+      <ul>
+        <li>17 árvores</li>
+        <li>2,5 barris de petróleo</li>
+        <li>4.100 kWh de eletricidade</li>
+        <li>31.780 litros de água</li>
+      </ul>
+      <p>Além disso, a reciclagem reduz a quantidade de resíduos enviados aos aterros sanitários e diminui as emissões
+        de gases de efeito estufa.</p>
+    </section>
+
+    <section>
+      <h2>Processo de Reciclagem do Papel</h2>
+      <p>Clique em cada etapa para saber mais detalhes sobre o processo de reciclagem:</p>
+
+      <div class="interactive-steps">
+        <div class="step" onclick="toggleStep(this)">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Coleta e Separação</h3>
+            <p>O primeiro passo no processo de reciclagem é coletar e separar o papel de outros materiais.</p>
+            <div class="step-details">
+              <p>Separe papéis de outros materiais como plástico, metal e vidro. Nem todos os tipos de papel podem ser
+                reciclados da mesma forma. Exemplos de papéis recicláveis:</p>
+              <ul>
+                <li>Jornais e revistas</li>
+                <li>Papelão</li>
+                <li>Folhas de caderno</li>
+                <li>Envelopes</li>
+                <li>Caixas de papel</li>
+              </ul>
+              <p>Evite papéis engordurados, adesivos, papéis plastificados, papel higiênico e papel toalha usados.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step" onclick="toggleStep(this)">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Trituração e Mistura</h3>
+            <p>O papel é triturado e misturado com água para criar uma pasta chamada "polpa".</p>
+            <div class="step-details">
+              <p>Na fábrica de reciclagem, o papel coletado é colocado em um grande liquidificador industrial chamado
+                "hidrapulper", que tritura o papel em pequenas fibras. Água é adicionada para criar uma mistura pastosa.
+              </p>
+              <p>Durante este processo, impurezas como clipes, grampos e plásticos são removidos através de peneiras e
+                filtros.</p>
+              <p>Produtos químicos podem ser adicionados para remover tintas e corantes do papel, num processo chamado
+                "destintamento".</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step" onclick="toggleStep(this)">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Limpeza e Refinamento</h3>
+            <p>A polpa passa por processos de limpeza e refinamento para remover contaminantes.</p>
+            <div class="step-details">
+              <p>A polpa passa por várias etapas de limpeza para remover materiais não fibrosos, como areia, grampos e
+                plásticos.</p>
+              <p>Em seguida, a polpa é refinada para melhorar a qualidade das fibras. Este processo envolve o tratamento
+                mecânico das fibras para melhorar suas propriedades.</p>
+              <p>Dependendo do produto final desejado, diferentes produtos químicos podem ser adicionados à polpa para
+                melhorar características como cor, resistência e textura.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step" onclick="toggleStep(this)">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Formação da Folha</h3>
+            <p>A polpa é espalhada em uma tela para formar novas folhas de papel.</p>
+            <div class="step-details">
+              <p>A polpa limpa é diluída com mais água e espalhada uniformemente sobre uma tela em movimento, formando
+                uma folha contínua.</p>
+              <p>À medida que a água escorre através da tela, as fibras começam a se unir, formando uma folha úmida de
+                papel.</p>
+              <p>Em indústrias, este processo é realizado por máquinas enormes chamadas "máquinas Fourdrinier", que
+                podem produzir papel em alta velocidade.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step" onclick="toggleStep(this)">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <h3>Secagem e Acabamento</h3>
+            <p>O papel passa por processos de secagem, prensagem e acabamento.</p>
+            <div class="step-details">
+              <p>A folha úmida passa por prensas que removem mais água e compactam as fibras.</p>
+              <p>Em seguida, passa por cilindros aquecidos que secam completamente o papel.</p>
+              <p>O papel seco pode passar por processos de acabamento como calandragem (para dar lisura), revestimento,
+                corte e empacotamento.</p>
+              <p>Finalmente, o papel reciclado é enrolado em grandes bobinas ou cortado em folhas, pronto para ser usado
+                novamente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Benefícios da Reciclagem de Papel</h2>
+
+      <div class="benefits">
+        <div class="benefit-card">
+          <div class="benefit-icon">🌳</div>
+          <h3>Preservação de Florestas</h3>
+          <p>A reciclagem de papel reduz a necessidade de cortar árvores para produção de papel novo.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">💧</div>
+          <h3>Economia de Água</h3>
+          <p>O processo de reciclagem usa muito menos água do que a produção de papel a partir de matéria-prima virgem.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">⚡</div>
+          <h3>Economia de Energia</h3>
+          <p>Reciclar papel consome até 70% menos energia do que fazer papel a partir de madeira.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">🌎</div>
+          <h3>Redução de Emissões</h3>
+          <p>Menos energia = menos emissões de gases de efeito estufa que contribuem para as mudanças climáticas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Dicas para Reciclar Papel em Casa</h2>
+      <ul>
+        <li>Separe o papel dos outros materiais recicláveis</li>
+        <li>Remova grampos, clipes e outros materiais não recicláveis</li>
+        <li>Não inclua papéis sujos, engordurados ou molhados</li>
+        <li>Dobre caixas de papelão para economizar espaço</li>
+        <li>Verifique as regras locais de reciclagem, pois elas podem variar</li>
+        <li>Reduza o consumo de papel sempre que possível</li>
+        <li>Reutilize papel antes de reciclar (use o verso das folhas, por exemplo)</li>
+      </ul>
+    </section>
+
+    <section class="container">
+      <div class="intro">
+        <h2>Por que reciclar plastico?</h2>
+        <p>O plástico é um dos materiais mais utilizados no mundo, mas também representa um grande desafio ambiental
+          quando
+          não é descartado corretamente.</p>
+        <p>Nesta página interativa, você aprenderá tudo sobre os diferentes tipos de plástico, como prepará-los para a
+          reciclagem, e por que isso é importante para o nosso planeta.</p>
+      </div>
+
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="info">Tipos de Plástico</button>
+        <button class="tab-btn" data-tab="steps">Como Reciclar</button>
+        <button class="tab-btn" data-tab="game">Jogo de Reciclagem</button>
+        <button class="tab-btn" data-tab="quiz">Quiz</button>
+      </div>
+
+      <div id="info" class="tab-content active">
+        <h2>Conheça os Tipos de Plástico</h2>
+        <p>Existem 7 tipos principais de plástico, cada um com características e processos de reciclagem específicos:
+        </p>
+
+        <div class="plastic-types">
+          <div class="plastic-card">
+            <img src="/api/placeholder/400/320" alt="PET - Polietileno Tereftalato">
+            <div class="plastic-info">
+              <h3>PET - Polietileno Tereftalato</h3>
+              <p>Usado em garrafas de água, refrigerantes e embalagens de alimentos.</p>
+              <span class="badge">Símbolo: 1</span>
+              <span class="badge">Altamente Reciclável</span>
+            </div>
+          </div>
+
+          <div class="plastic-card">
+            <img src="/api/placeholder/400/320" alt="PEAD - Polietileno de Alta Densidade">
+            <div class="plastic-info">
+              <h3>PEAD - Polietileno de Alta Densidade</h3>
+              <p>Encontrado em frascos de shampoo, detergentes e garrafas de leite.</p>
+              <span class="badge">Símbolo: 2</span>
+              <span class="badge">Reciclável</span>
+            </div>
+          </div>
+
+          <div class="plastic-card">
+            <img src="/api/placeholder/400/320" alt="PVC - Policloreto de Vinila">
+            <div class="plastic-info">
+              <h3>PVC - Policloreto de Vinila</h3>
+              <p>Usado em tubulações, mangueiras e alguns tipos de embalagens.</p>
+              <span class="badge">Símbolo: 3</span>
+              <span class="badge">Difícil de Reciclar</span>
+            </div>
+          </div>
+
+          <div class="plastic-card">
+            <img src="/api/placeholder/400/320" alt="PEBD - Polietileno de Baixa Densidade">
+            <div class="plastic-info">
+              <h3>PEBD - Polietileno de Baixa Densidade</h3>
+              <p>Presente em sacos plásticos, filmes e embalagens flexíveis.</p>
+              <span class="badge">Símbolo: 4</span>
+              <span class="badge">Reciclável</span>
+            </div>
+          </div>
+
+          <div class="plastic-card">
+            <img src="/api/placeholder/400/320" alt="PP - Polipropileno">
+            <div class="plastic-info">
+              <h3>PP - Polipropileno</h3>
+              <p>Encontrado em potes de margarina, tampas e utensílios reutilizáveis.</p>
+              <span class="badge">Símbolo: 5</span>
+              <span class="badge">Reciclável</span>
+            </div>
+          </div>
+
+          <div class="plastic-card">
+            <img src="/api/placeholder/400/320" alt="PS - Poliestireno">
+            <div class="plastic-info">
+              <h3>PS - Poliestireno</h3>
+              <p>Usado em copos descartáveis, bandejas de carne e embalagens protegidas.</p>
+              <span class="badge">Símbolo: 6</span>
+              <span class="badge">Difícil de Reciclar</span>
+            </div>
+          </div>
+
+          <div class="plastic-card">
+            <img src="/api/placeholder/400/320" alt="Outros">
+            <div class="plastic-info">
+              <h3>Outros</h3>
+              <p>Inclui plásticos mistos, acrílicos, policarbonatos e nylon.</p>
+              <span class="badge">Símbolo: 7</span>
+              <span class="badge">Raramente Reciclável</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="steps" class="tab-content">
+        <h2>Passos para Reciclar Plástico Corretamente</h2>
+
+        <div class="steps">
+          <div class="step">
+            <h3>Identificar o Tipo de Plástico</h3>
+            <p>Verifique o símbolo de reciclagem (número de 1 a 7) geralmente impresso na parte inferior da embalagem.
+              Isso
+              ajuda a determinar se o item é reciclável na sua região.</p>
+          </div>
+
+          <div class="step">
+            <h3>Limpar e Esvaziar</h3>
+            <p>Remova resíduos de alimentos ou produtos. Enxágue levemente para eliminar restos. Não é necessário usar
+              muita
+              água ou detergente.</p>
+          </div>
+
+          <div class="step">
+            <h3>Remover Tampas e Rótulos</h3>
+            <p>Se possível, separe tampas e rótulos, pois muitas vezes são feitos de materiais diferentes. As tampas
+              podem ser
+              recicladas separadamente.</p>
+          </div>
+
+          <div class="step">
+            <h3>Compactar</h3>
+            <p>Comprima os recipientes para economizar espaço. Isso facilita o transporte e processamento nos centros de
+              reciclagem.</p>
+          </div>
+
+          <div class="step">
+            <h3>Separar Corretamente</h3>
+            <p>Coloque os plásticos no contentor adequado. Em algumas regiões, diferentes tipos de plástico devem ser
+              separados.</p>
+          </div>
+
+          <div class="step">
+            <h3>Verificar as Regras Locais</h3>
+            <p>As diretrizes de reciclagem variam de acordo com a região. Consulte as informações específicas do seu
+              município
+              para garantir que está reciclando corretamente.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="game" class="tab-content">
+        <h2>Jogo de Classificação de Plásticos</h2>
+        <p>Arraste os itens para o contentor correto de reciclagem:</p>
+
+        <div class="drag-drop-game">
+          <div class="drag-items">
+            <div class="draggable" data-type="pet">Garrafa de Água</div>
+            <div class="draggable" data-type="hdpe">Frasco de Shampoo</div>
+            <div class="draggable" data-type="pvc">Cano de PVC</div>
+            <div class="draggable" data-type="pet">Garrafa de Refrigerante</div>
+            <div class="draggable" data-type="ps">Copo Descartável</div>
+            <div class="draggable" data-type="ldpe">Saco Plástico</div>
+            <div class="draggable" data-type="pp">Pote de Margarina</div>
+            <div class="draggable" data-type="other">Brinquedo de Plástico</div>
+            <div class="draggable" data-type="hdpe">Garrafa de Leite</div>
+          </div>
+
+          <div class="drop-targets">
+            <div class="drop-target" data-accepts="pet,hdpe,pp">
+              <h3>Plásticos Altamente Recicláveis</h3>
+              <div class="dropped-items"></div>
+            </div>
+
+            <div class="drop-target" data-accepts="ldpe,ps">
+              <h3>Plásticos Moderadamente Recicláveis</h3>
+              <div class="dropped-items"></div>
+            </div>
+
+            <div class="drop-target" data-accepts="pvc,other">
+              <h3>Plásticos Difíceis de Reciclar</h3>
+              <div class="dropped-items"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="quiz" class="tab-content">
+        <div class="quiz-container">
+          <h2>Teste seus Conhecimentos</h2>
+
+          <div class="quiz-question" data-question="1">
+            <h3>1. Qual tipo de plástico é mais comumente usado em garrafas de água?</h3>
+            <ul class="quiz-options">
+              <li class="quiz-option" data-correct="true">PET (Polietileno Tereftalato)</li>
+              <li class="quiz-option">PVC (Policloreto de Vinila)</li>
+              <li class="quiz-option">PP (Polipropileno)</li>
+              <li class="quiz-option">PS (Poliestireno)</li>
+            </ul>
+          </div>
+
+          <div class="quiz-question" data-question="2">
+            <h3>2. Por que é importante lavar as embalagens antes de reciclá-las?</h3>
+            <ul class="quiz-options">
+              <li class="quiz-option">Não é importante, as instalações de reciclagem lavam tudo</li>
+              <li class="quiz-option" data-correct="true">Para evitar contaminação e facilitar o processo de reciclagem
+              </li>
+              <li class="quiz-option">Apenas para evitar mau cheiro em casa</li>
+              <li class="quiz-option">É apenas uma recomendação, não afeta o processo</li>
+            </ul>
+          </div>
+
+          <div class="quiz-question" data-question="3">
+            <h3>3. Qual destes plásticos é mais difícil de reciclar?</h3>
+            <ul class="quiz-options">
+              <li class="quiz-option">PEAD (Polietileno de Alta Densidade)</li>
+              <li class="quiz-option">PET (Polietileno Tereftalato)</li>
+              <li class="quiz-option" data-correct="true">PS (Poliestireno - Isopor)</li>
+              <li class="quiz-option">PP (Polipropileno)</li>
+            </ul>
+          </div>
+
+          <div class="quiz-question" data-question="4">
+            <h3>4. Aproximadamente quanto tempo leva para uma garrafa plástica se decompor na natureza?</h3>
+            <ul class="quiz-options">
+              <li class="quiz-option">10-20 anos</li>
+              <li class="quiz-option">50-80 anos</li>
+              <li class="quiz-option" data-correct="true">450-500 anos</li>
+              <li class="quiz-option">100-200 anos</li>
+            </ul>
+          </div>
+
+          <div class="quiz-result"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>Transformar</h3>
+          <p>Ensinando as crianças a cuidar do nosso planeta desde cedo.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="porque-reciclar.html">Por que Reciclar?</a></li>
+            <li><a href="aprenda-separar.html">Aprenda a Separar</a></li>
+            <li><a href="onde-descartar.html">Onde Descartar</a></li>
+            <li><a href="atividades.html">Atividades</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Para Professores</h3>
+          <ul>
+            <li><a href="professor.html">Área do Professor</a></li>
+            <li><a href="professor.html#planos">Planos de Aula</a></li>
+            <li><a href="professor.html#projetos">Projetos Escolares</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contato</h3>
+          <p>Email: contato@transformar.edu.br</p>
+          <p>Telefone: (00) 1234-5678</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 transformar - Todos os direitos reservados</p>
+        <p>Desenvolvido para fins educacionais</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
