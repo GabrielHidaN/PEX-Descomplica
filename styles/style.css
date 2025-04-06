@@ -36,6 +36,8 @@ nav ul {
   box-sizing: border-box;
 }
 
+
+
 body {
   font-family: var(--font-family);
   color: var(--color-dark);
@@ -149,13 +151,14 @@ nav a {
   color: var(--color-dark);
   font-weight: 600;
   padding: 8px 12px;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 nav a:hover,
 nav a.active {
   background-color: var(--color-primary);
   color: white;
+
 }
 
 /* Seção Hero */
@@ -414,8 +417,23 @@ footer {
     justify-content: center;
   }
 
-  .categoria {
-    flex-basis: calc(50% - 20px);
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  /* footer */
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    font-size: 2.25rem;
   }
 
   nav ul {
@@ -446,8 +464,80 @@ footer {
   }
 }
 
-@media (max-width: 576px) {
-  .categoria {
-    flex-basis: 100%;
+/* large devices: 1023 > */
+/* large devices: 992 > */
+@media (min-width: 992px) {
+  :root {
+    --title-font-size: 2.25rem;
+    --subtitle-font-size: 1.125rem;
   }
+}
+
+/* medium devices: 767 > */
+#contact .team {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas para telas grandes, adaptável para menores */
+  gap: 20px;
+  padding: 20px;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  max-width: 150px; /* tamanho máximo da imagem */
+  object-fit: cover; /* Garante que a imagem se encaixe bem */
+  filter: grayscale(100%); /* Aplica escala de cinza */
+  transition: filter 0.3s ease; /* Efeito suave ao mudar o filtro */
+}
+
+.team-member img:hover {
+  filter: grayscale(0%); /* Remove a escala de cinza ao passar o mouse */
+}
+
+.team-member h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: bold; /* Texto em negrito */
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #777;
+  font-weight: bold; /* Texto em negrito */
+}
+
+.contact-info {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.contact-links li {
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.contact-links li i {
+  margin-right: 10px;
+}
+
+/* Estilo para os parágrafos */
+.text p {
+  margin-bottom: 30px; /* A ajustar */
 }
