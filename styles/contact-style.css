@@ -6,4 +6,9 @@
     padding-left: 30vh;
     margin-top: 100px;
     margin-bottom: 70px;
+
   }
+.nav-bar>ul>li>a {
+    text-decoration: none;
+
+}

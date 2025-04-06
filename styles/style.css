@@ -135,13 +135,14 @@ nav a {
   color: var(--color-dark);
   font-weight: 600;
   padding: 8px 12px;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 nav a:hover,
 nav a.active {
   background-color: var(--color-primary);
   color: white;
+
 }
 
 /* Seção Hero */
