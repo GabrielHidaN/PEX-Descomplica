@@ -7,6 +7,7 @@
   <title>ReciclarEtransformar - Aprenda a Reciclar Corretamente</title>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/style-papel.css">
+    <link rel="stylesheet" href="styles/style-plastico.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -61,6 +62,105 @@
         <button class="reset-button" id="resetButton">Recomeçar</button>
       </div>
     </section>
+    <section id="recicle_plastico">
+      <div class="intro">
+        <h2>Por que reciclar plastico?</h2>
+        <p>O plástico é um dos materiais mais utilizados no mundo, mas também representa um grande desafio ambiental
+          quando
+          não é descartado corretamente.</p>
+        <p>Nesta página interativa, você aprenderá tudo sobre os diferentes tipos de plástico, como prepará-los para a
+          reciclagem, e por que isso é importante para o nosso planeta.</p>
+      </div>
+      
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="game">Jogo de Reciclagem</button>
+        <button class="tab-btn" data-tab="quiz">Quiz</button>
+      </div>
+      <div id="game" class="tab-content active">
+        <h2>Jogo de Classificação de Plásticos</h2>
+        <p>Arraste os itens para o contentor correto de reciclagem:</p>
+
+        <div class="drag-drop-game">
+          <div class="drag-items">
+            <div class="draggable" data-type="pet">Garrafa de Água</div>
+            <div class="draggable" data-type="hdpe">Frasco de Shampoo</div>
+            <div class="draggable" data-type="pvc">Cano de PVC</div>
+            <div class="draggable" data-type="pet">Garrafa de Refrigerante</div>
+            <div class="draggable" data-type="ps">Copo Descartável</div>
+            <div class="draggable" data-type="ldpe">Saco Plástico</div>
+            <div class="draggable" data-type="pp">Pote de Margarina</div>
+            <div class="draggable" data-type="other">Brinquedo de Plástico</div>
+            <div class="draggable" data-type="hdpe">Garrafa de Leite</div>
+          </div>
+
+          <div class="drop-targets">
+            <div class="drop-target" data-accepts="pet,hdpe,pp">
+              <h3>Plásticos Altamente Recicláveis</h3>
+              <div class="dropped-items"></div>
+            </div>
+
+            <div class="drop-target" data-accepts="ldpe,ps">
+              <h3>Plásticos Moderadamente Recicláveis</h3>
+              <div class="dropped-items"></div>
+            </div>
+
+            <div class="drop-target" data-accepts="pvc,other">
+              <h3>Plásticos Difíceis de Reciclar</h3>
+              <div class="dropped-items"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="quiz" class="tab-content">
+        <div class="quiz-container">
+          <h2>Teste seus Conhecimentos</h2>
+
+          <div class="quiz-question" data-question="1">
+            <h3>1. Qual tipo de plástico é mais comumente usado em garrafas de água?</h3>
+            <ul class="quiz-options">
+              <li class="quiz-option" data-correct="true">PET (Polietileno Tereftalato)</li>
+              <li class="quiz-option">PVC (Policloreto de Vinila)</li>
+              <li class="quiz-option">PP (Polipropileno)</li>
+              <li class="quiz-option">PS (Poliestireno)</li>
+            </ul>
+          </div>
+
+          <div class="quiz-question" data-question="2">
+            <h3>2. Por que é importante lavar as embalagens antes de reciclá-las?</h3>
+            <ul class="quiz-options">
+              <li class="quiz-option">Não é importante, as instalações de reciclagem lavam tudo</li>
+              <li class="quiz-option" data-correct="true">Para evitar contaminação e facilitar o processo de reciclagem
+              </li>
+              <li class="quiz-option">Apenas para evitar mau cheiro em casa</li>
+              <li class="quiz-option">É apenas uma recomendação, não afeta o processo</li>
+            </ul>
+          </div>
+
+          <div class="quiz-question" data-question="3">
+            <h3>3. Qual destes plásticos é mais difícil de reciclar?</h3>
+            <ul class="quiz-options">
+              <li class="quiz-option">PEAD (Polietileno de Alta Densidade)</li>
+              <li class="quiz-option">PET (Polietileno Tereftalato)</li>
+              <li class="quiz-option" data-correct="true">PS (Poliestireno - Isopor)</li>
+              <li class="quiz-option">PP (Polipropileno)</li>
+            </ul>
+          </div>
+
+          <div class="quiz-question" data-question="4">
+            <h3>4. Aproximadamente quanto tempo leva para uma garrafa plástica se decompor na natureza?</h3>
+            <ul class="quiz-options">
+              <li class="quiz-option">10-20 anos</li>
+              <li class="quiz-option">50-80 anos</li>
+              <li class="quiz-option" data-correct="true">450-500 anos</li>
+              <li class="quiz-option">100-200 anos</li>
+            </ul>
+          </div>
+
+          <div class="quiz-result"></div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -78,14 +178,7 @@
             <li><a href="aprenda-separar.html">Aprenda a Separar</a></li>
             <li><a href="onde-descartar.html">Onde Descartar</a></li>
             <li><a href="atividades.html">Atividades</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Para Professores</h3>
-          <ul>
-            <li><a href="professor.html">Área do Professor</a></li>
-            <li><a href="professor.html#planos">Planos de Aula</a></li>
-            <li><a href="professor.html#projetos">Projetos Escolares</a></li>
+            <li><a href="contact.html">Sobre Nós</a></li>
           </ul>
         </div>
         <div class="footer-column">

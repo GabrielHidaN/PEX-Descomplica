@@ -191,18 +191,44 @@
 
     <section>
       <h2>Dicas para Reciclar Papel em Casa</h2>
-      <ul>
-        <li>Separe o papel dos outros materiais recicláveis</li>
-        <li>Remova grampos, clipes e outros materiais não recicláveis</li>
-        <li>Não inclua papéis sujos, engordurados ou molhados</li>
-        <li>Dobre caixas de papelão para economizar espaço</li>
-        <li>Verifique as regras locais de reciclagem, pois elas podem variar</li>
-        <li>Reduza o consumo de papel sempre que possível</li>
-        <li>Reutilize papel antes de reciclar (use o verso das folhas, por exemplo)</li>
-      </ul>
+      <div class="steps benefits">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Separe o papel dos outros materiais recicláveis.</h3>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Remova grampos, clipes e outros materiais não recicláveis.</h3>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Não inclua papéis sujos, engordurados ou molhados.</h3>
+        </div>
+
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Dobre caixas de papelão para economizar espaço.</h3>
+        </div>
+
+        <div class="step">
+          <div class="step-number">5</div>
+          <h3>Verifique as regras locais de reciclagem, pois elas podem variar.</h3>
+        </div>
+
+        <div class="step">
+          <div class="step-number">6</div>
+          <h3>Reduza o consumo de papel sempre que possível.</h3>
+        </div>
+        <div class="step">
+          <div class="step-number">7</div>
+          <h3>Reutilize papel antes de reciclar (use o verso das folhas, por exemplo).</h3>
+        </div>
+      </div>
     </section>
 
-    <section class="container">
+    <section class="">
       <div class="intro">
         <h2>Por que reciclar plastico?</h2>
         <p>O plástico é um dos materiais mais utilizados no mundo, mas também representa um grande desafio ambiental
@@ -215,8 +241,6 @@
       <div class="tabs">
         <button class="tab-btn active" data-tab="info">Tipos de Plástico</button>
         <button class="tab-btn" data-tab="steps">Como Reciclar</button>
-        <button class="tab-btn" data-tab="game">Jogo de Reciclagem</button>
-        <button class="tab-btn" data-tab="quiz">Quiz</button>
       </div>
 
       <div id="info" class="tab-content active">
@@ -302,6 +326,7 @@
 
         <div class="steps">
           <div class="step">
+            <div class="step-number">1</div>
             <h3>Identificar o Tipo de Plástico</h3>
             <p>Verifique o símbolo de reciclagem (número de 1 a 7) geralmente impresso na parte inferior da embalagem.
               Isso
@@ -309,6 +334,7 @@
           </div>
 
           <div class="step">
+            <div class="step-number">2</div>
             <h3>Limpar e Esvaziar</h3>
             <p>Remova resíduos de alimentos ou produtos. Enxágue levemente para eliminar restos. Não é necessário usar
               muita
@@ -316,6 +342,7 @@
           </div>
 
           <div class="step">
+            <div class="step-number">3</div>
             <h3>Remover Tampas e Rótulos</h3>
             <p>Se possível, separe tampas e rótulos, pois muitas vezes são feitos de materiais diferentes. As tampas
               podem ser
@@ -323,108 +350,26 @@
           </div>
 
           <div class="step">
+            <div class="step-number">4</div>
             <h3>Compactar</h3>
             <p>Comprima os recipientes para economizar espaço. Isso facilita o transporte e processamento nos centros de
               reciclagem.</p>
           </div>
 
           <div class="step">
+            <div class="step-number">5</div>
             <h3>Separar Corretamente</h3>
             <p>Coloque os plásticos no contentor adequado. Em algumas regiões, diferentes tipos de plástico devem ser
               separados.</p>
           </div>
 
           <div class="step">
+            <div class="step-number">6</div>
             <h3>Verificar as Regras Locais</h3>
             <p>As diretrizes de reciclagem variam de acordo com a região. Consulte as informações específicas do seu
               município
               para garantir que está reciclando corretamente.</p>
           </div>
-        </div>
-      </div>
-
-      <div id="game" class="tab-content">
-        <h2>Jogo de Classificação de Plásticos</h2>
-        <p>Arraste os itens para o contentor correto de reciclagem:</p>
-
-        <div class="drag-drop-game">
-          <div class="drag-items">
-            <div class="draggable" data-type="pet">Garrafa de Água</div>
-            <div class="draggable" data-type="hdpe">Frasco de Shampoo</div>
-            <div class="draggable" data-type="pvc">Cano de PVC</div>
-            <div class="draggable" data-type="pet">Garrafa de Refrigerante</div>
-            <div class="draggable" data-type="ps">Copo Descartável</div>
-            <div class="draggable" data-type="ldpe">Saco Plástico</div>
-            <div class="draggable" data-type="pp">Pote de Margarina</div>
-            <div class="draggable" data-type="other">Brinquedo de Plástico</div>
-            <div class="draggable" data-type="hdpe">Garrafa de Leite</div>
-          </div>
-
-          <div class="drop-targets">
-            <div class="drop-target" data-accepts="pet,hdpe,pp">
-              <h3>Plásticos Altamente Recicláveis</h3>
-              <div class="dropped-items"></div>
-            </div>
-
-            <div class="drop-target" data-accepts="ldpe,ps">
-              <h3>Plásticos Moderadamente Recicláveis</h3>
-              <div class="dropped-items"></div>
-            </div>
-
-            <div class="drop-target" data-accepts="pvc,other">
-              <h3>Plásticos Difíceis de Reciclar</h3>
-              <div class="dropped-items"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="quiz" class="tab-content">
-        <div class="quiz-container">
-          <h2>Teste seus Conhecimentos</h2>
-
-          <div class="quiz-question" data-question="1">
-            <h3>1. Qual tipo de plástico é mais comumente usado em garrafas de água?</h3>
-            <ul class="quiz-options">
-              <li class="quiz-option" data-correct="true">PET (Polietileno Tereftalato)</li>
-              <li class="quiz-option">PVC (Policloreto de Vinila)</li>
-              <li class="quiz-option">PP (Polipropileno)</li>
-              <li class="quiz-option">PS (Poliestireno)</li>
-            </ul>
-          </div>
-
-          <div class="quiz-question" data-question="2">
-            <h3>2. Por que é importante lavar as embalagens antes de reciclá-las?</h3>
-            <ul class="quiz-options">
-              <li class="quiz-option">Não é importante, as instalações de reciclagem lavam tudo</li>
-              <li class="quiz-option" data-correct="true">Para evitar contaminação e facilitar o processo de reciclagem
-              </li>
-              <li class="quiz-option">Apenas para evitar mau cheiro em casa</li>
-              <li class="quiz-option">É apenas uma recomendação, não afeta o processo</li>
-            </ul>
-          </div>
-
-          <div class="quiz-question" data-question="3">
-            <h3>3. Qual destes plásticos é mais difícil de reciclar?</h3>
-            <ul class="quiz-options">
-              <li class="quiz-option">PEAD (Polietileno de Alta Densidade)</li>
-              <li class="quiz-option">PET (Polietileno Tereftalato)</li>
-              <li class="quiz-option" data-correct="true">PS (Poliestireno - Isopor)</li>
-              <li class="quiz-option">PP (Polipropileno)</li>
-            </ul>
-          </div>
-
-          <div class="quiz-question" data-question="4">
-            <h3>4. Aproximadamente quanto tempo leva para uma garrafa plástica se decompor na natureza?</h3>
-            <ul class="quiz-options">
-              <li class="quiz-option">10-20 anos</li>
-              <li class="quiz-option">50-80 anos</li>
-              <li class="quiz-option" data-correct="true">450-500 anos</li>
-              <li class="quiz-option">100-200 anos</li>
-            </ul>
-          </div>
-
-          <div class="quiz-result"></div>
         </div>
       </div>
     </section>
@@ -445,14 +390,7 @@
             <li><a href="aprenda-separar.html">Aprenda a Separar</a></li>
             <li><a href="onde-descartar.html">Onde Descartar</a></li>
             <li><a href="atividades.html">Atividades</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Para Professores</h3>
-          <ul>
-            <li><a href="professor.html">Área do Professor</a></li>
-            <li><a href="professor.html#planos">Planos de Aula</a></li>
-            <li><a href="professor.html#projetos">Projetos Escolares</a></li>
+            <li><a href="contact.html">Sobre Nós</a></li>
           </ul>
         </div>
         <div class="footer-column">

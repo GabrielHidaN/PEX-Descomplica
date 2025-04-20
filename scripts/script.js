@@ -1,5 +1,4 @@
 // Script principal do site de reciclagem
-
 document.addEventListener("DOMContentLoaded", function () {
   // Animações de scroll suave para links de navegação
   const links = document.querySelectorAll('a[href^="#"]')
@@ -63,34 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
       link.classList.remove("active")
     }
   })
-
-  // Formulário de contato - prevenção de envio e feedback
-  const contactForm = document.querySelector(".contact-form")
-
-  if (contactForm) {
-    contactForm.addEventListener("submit", function (e) {
-      e.preventDefault()
-
-      // Simulação de envio
-      const submitButton = this.querySelector('button[type="submit"]')
-      const originalText = submitButton.textContent
-
-      submitButton.disabled = true
-      submitButton.textContent = "Enviando..."
-
-      setTimeout(() => {
-        const formFields = this.querySelectorAll("input, textarea")
-        formFields.forEach((field) => (field.value = ""))
-
-        submitButton.textContent = "Mensagem Enviada!"
-
-        setTimeout(() => {
-          submitButton.disabled = false
-          submitButton.textContent = originalText
-        }, 3000)
-      }, 1500)
-    })
-  }
 })
 
 //script para explicar como reciclar o papel
