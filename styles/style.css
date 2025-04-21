@@ -15,6 +15,25 @@
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 35px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +47,7 @@ body {
   color: var(--color-dark);
   line-height: 1.6;
 }
+
 /*main{
   background-color: var(--color-light);
 }*/
@@ -122,9 +142,11 @@ header .container {
   color: var(--color-primary);
 }
 
+/* Estilo do menu */
 nav ul {
   display: flex;
   list-style: none;
+  gap: 15px;
 }
 
 nav li {
@@ -136,6 +158,7 @@ nav a {
   font-weight: 600;
   padding: 8px 12px;
   border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 nav a:hover,
@@ -382,6 +405,10 @@ footer {
   opacity: 0.7;
   font-size: 0.9rem;
 }
+.social-icons a img {
+  background-color: white;
+  border-radius: 180px;
+}
 
 /* Responsividade */
 @media (max-width: 992px) {
@@ -393,10 +420,6 @@ footer {
   .hero-content {
     padding-right: 0;
     margin-bottom: 30px;
-  }
-
-  nav {
-    display: none;
   }
 }
 
@@ -423,6 +446,32 @@ footer {
   footer .logo {
     font-size: 2.25rem;
   }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-light);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    gap: 58px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul li a.active {
+    background-color: var(--color-primary);
+    color: white;
+  }
 }
 
 /* large devices: 1023 > */
@@ -437,7 +486,8 @@ footer {
 /* medium devices: 767 > */
 #contact .team {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 colunas para telas grandes, adaptável para menores */
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 colunas para telas grandes, adaptável para menores */
   gap: 20px;
   padding: 20px;
 }
@@ -451,26 +501,33 @@ footer {
   height: auto;
   border-radius: 50%;
   margin-bottom: 15px;
-  max-width: 150px; /* tamanho máximo da imagem */
-  object-fit: cover; /* Garante que a imagem se encaixe bem */
-  filter: grayscale(100%); /* Aplica escala de cinza */
-  transition: filter 0.3s ease; /* Efeito suave ao mudar o filtro */
+  max-width: 150px;
+  /* tamanho máximo da imagem */
+  object-fit: cover;
+  /* Garante que a imagem se encaixe bem */
+  filter: grayscale(100%);
+  /* Aplica escala de cinza */
+  transition: filter 0.3s ease;
+  /* Efeito suave ao mudar o filtro */
 }
 
 .team-member img:hover {
-  filter: grayscale(0%); /* Remove a escala de cinza ao passar o mouse */
+  filter: grayscale(0%);
+  /* Remove a escala de cinza ao passar o mouse */
 }
 
 .team-member h3 {
   font-size: 18px;
   margin: 10px 0;
-  font-weight: bold; /* Texto em negrito */
+  font-weight: bold;
+  /* Texto em negrito */
 }
 
 .team-member p {
   font-size: 14px;
   color: #777;
-  font-weight: bold; /* Texto em negrito */
+  font-weight: bold;
+  /* Texto em negrito */
 }
 
 .contact-info {
@@ -500,5 +557,6 @@ footer {
 
 /* Estilo para os parágrafos */
 .text p {
-  margin-bottom: 30px; /* A ajustar */
+  margin-bottom: 30px;
+  /* A ajustar */
 }
