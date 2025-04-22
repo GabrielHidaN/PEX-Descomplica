@@ -68,46 +68,69 @@
         <a href="onde-descartar.html" class="btn btn-outline">Ver mapa completo</a>
       </div>
     </section>
-
-    <section class="destaque-categorias">
+    
+    <section id="materiais" class="section">
       <div class="container">
-        <h2>O que você quer reciclar hoje?</h2>
-        <div class="categorias">
-          <div class="categoria">
-            <img src="/assets/fotos/papel.jpg" alt="Papel">
-            <h3>Papel</h3>
-            <p>Saiba como reciclar papéis usados e contribuir para a preservação das florestas.</p>
-            <a href="aprenda-separar.html#papel">Saiba mais</a>
+        <h2 class="section-title">Materiais Recicláveis</h2>
+        <div class="cards-container">
+          <div id="papel" class="card card-papel">
+            <div class="card-header">🧻</div>
+            <div class="card-content">
+              <h3>Papel</h3>
+              <p>O vidro é 100% reciclável e pode ser reprocessado infinitas vezes sem perder sua qualidade. Garrafas,
+                potes
+                e frascos de vidro devem ser limpos antes da reciclagem.</p>
+              <button class="card-button" onclick="openModal('vidroModal')">Saiba mais</button>
+            </div>
           </div>
-          <div class="categoria">
-            <img src="/assets/fotos/garafa.jpg" alt="Plástico">
-            <h3>Plástico</h3>
-            <p>Descubra como separar plásticos e reduzir o impacto ambiental.</p>
-            <a href="aprenda-separar.html#plastico">Saiba mais</a>
+          <div id="plastico" class="card card-plastic">
+            <div class="card-header">🍶</div>
+            <div class="card-content">
+              <h3>Plástico</h3>
+              <p>O vidro é 100% reciclável e pode ser reprocessado infinitas vezes sem perder sua qualidade. Garrafas,
+                potes
+                e frascos de vidro devem ser limpos antes da reciclagem.</p>
+              <button class="card-button" onclick="openModal('vidroModal')">Saiba mais</button>
+            </div>
           </div>
-          <div class="categoria">
-            <img src="/assets/fotos/vidro.jpg" alt="Vidro">
-            <h3>Vidro</h3>
-            <p>Aprenda a reciclar vidros de forma segura e eficiente.</p>
-            <a href="aprenda-separar.html#vidro">Saiba mais</a>
+          <div id="vidro" class="card card-glass">
+            <div class="card-header">🫗</div>
+            <div class="card-content">
+              <h3>Vidro</h3>
+              <p>O vidro é 100% reciclável e pode ser reprocessado infinitas vezes sem perder sua qualidade. Garrafas,
+                potes
+                e frascos de vidro devem ser limpos antes da reciclagem.</p>
+              <button class="card-button" onclick="openModal('vidroModal')">Saiba mais</button>
+            </div>
           </div>
-          <div class="categoria">
-            <img src="/assets/fotos/metal.jpg" alt="Metal">
-            <h3>Metal</h3>
-            <p>Veja como separar metais e ajudar na economia de recursos naturais.</p>
-            <a href="aprenda-separar.html#metal">Saiba mais</a>
+          <div id="organico" class="card card-organic">
+            <div class="card-header">🍎</div>
+            <div class="card-content">
+              <h3>Orgâncico</h3>
+              <p>O vidro é 100% reciclável e pode ser reprocessado infinitas vezes sem perder sua qualidade. Garrafas,
+                potes
+                e frascos de vidro devem ser limpos antes da reciclagem.</p>
+              <button class="card-button" onclick="openModal('vidroModal')">Saiba mais</button>
+            </div>
           </div>
-          <div class="categoria">
-            <img src="/assets/fotos/eletronico.svg" alt="Eletrônicos">
-            <h3>Eletrônicos</h3>
-            <p>Descubra como descartar aparelhos eletrônicos de forma responsável.</p>
-            <a href="aprenda-separar.html#eletronicos">Saiba mais</a>
+          <div id="eletronicos" class="card card-electronics">
+            <div class="card-header">🔌</div>
+            <div class="card-content">
+              <h3>Eletrônicos</h3>
+              <p>Eletrônicos contêm metais pesados e substâncias tóxicas. É essencial descartá-los em pontos de coleta
+                específicos para evitar contaminação do solo e água.</p>
+              <button class="card-button" onclick="openModal('eletronicosModal')">Saiba mais</button>
+            </div>
           </div>
-          <div class="categoria">
-            <img src="/assets/fotos/organico.jpg" alt="Orgânicos">
-            <h3>Orgânico</h3>
-            <p>Aprenda a compostar resíduos orgânicos e reduzir o lixo doméstico.</p>
-            <a href="aprenda-separar.html#organicos">Saiba mais</a>
+          <div id="metal" class="card card-metal">
+            <div class="card-header">🔧</div>
+            <div class="card-content">
+              <h3>Metal</h3>
+              <p>Metais como alumínio, aço, cobre e latão são altamente recicláveis. A reciclagem de metais economiza
+                até
+                95% da energia necessária para produzi-los a partir de matéria-prima.</p>
+              <button class="card-button" onclick="openModal('metalModal')">Saiba mais</button>
+            </div>
           </div>
         </div>
       </div>
@@ -115,7 +138,7 @@
 
     <section class="voce-sabia">
       <div class="container">
-        <div class="card">
+        <div class="card1">
           <h2>Você sabia?</h2>
           <p>Uma única garrafa plástica pode levar até 450 anos para se decompor na natureza!</p>
           <p>Ao reciclar <strong>1 tonelada de papel</strong>, salvamos <strong>20 árvores adultas.</strong></p>
@@ -166,10 +189,10 @@
         <div class="footer-column">
           <h3>Redes Sociais</h3>
           <ul class="social-icons">
-              <a href="https://instagram.com" target="_blank"><img src="assets/icon/instagram.png" alt="instagram"></a>
-              <a href="https://github.com" target="_blank"><img src="assets/icon/logotipo-do-github.png" alt="github"></a>
-              <a href="https://linkedin.com" target="_blank"><img src="assets/icon/linkedin.png" alt="linkedin"></i></a>
-              <a href="https://facebook.com" target="_blank"><img src="assets/icon/facebook.png" alt="facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><img src="assets/icon/instagram.png" alt="instagram"></a>
+            <a href="https://github.com" target="_blank"><img src="assets/icon/logotipo-do-github.png" alt="github"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="assets/icon/linkedin.png" alt="linkedin"></i></a>
+            <a href="https://facebook.com" target="_blank"><img src="assets/icon/facebook.png" alt="facebook"></i></a>
           </ul>
         </div>
         <div class="footer-column">

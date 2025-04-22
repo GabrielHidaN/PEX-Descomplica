@@ -221,51 +221,93 @@ nav a.active {
   overflow: hidden;
 }
 
-/* Seção Categorias */
-.destaque-categorias {
-  padding: 40px 0;
-  background-color: white;
-}
-
-.destaque-categorias h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: var(--color-primary);
-}
-
-.categorias {
+/* secão materias */
+.cards-container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.categoria {
-  flex: 1;
-  min-width: 150px;
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.section-title {
   text-align: center;
-  padding: 20px;
-  background-color: var(--color-light);
-  border-radius: 10px;
-  box-shadow: var(--shadow);
-  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+  color: #2E7D32;
 }
 
-.categoria:hover {
-  transform: translateY(-10px);
+.card:hover {
+  transform: translateY(-5px);
 }
 
-.categoria img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 15px;
-  border-radius: 50%;
-  padding: 10px;
+.card-header {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 4rem;
 }
 
-.categoria h3 {
-  margin-bottom: 10px;
-  color: var(--color-primary);
+.card-glass .card-header {
+  background-color: #81C784;
+}
+
+.card-organic .card-header {
+  background-color: #a05916;
+}
+
+.card-papel .card-header {
+  background-color: #181bd3;
+}
+
+.card-plastic .card-header {
+  background-color: #f03333;
+}
+
+.card-electronics .card-header {
+  background-color: #9e4ad6;
+}
+
+.card-metal .card-header {
+  background-color: #FFD54F;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.card-button {
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.card-button:hover {
+  background-color: #e0e0e0;
 }
 
 /* Seção Você Sabia */
@@ -273,7 +315,7 @@ nav a.active {
   padding: 60px 0;
 }
 
-.voce-sabia .card {
+.voce-sabia .card1 {
   background-color: var(--color-secondary);
   color: white;
   padding: 30px;
@@ -405,6 +447,7 @@ footer {
   opacity: 0.7;
   font-size: 0.9rem;
 }
+
 .social-icons a img {
   background-color: white;
   border-radius: 180px;
