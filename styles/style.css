@@ -18,7 +18,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+span {
+  color: var(--color-primary);
+}
 nav ul {
   display: flex;
   list-style: none;
@@ -46,6 +48,11 @@ body {
   font-family: var(--font-family);
   color: var(--color-dark);
   line-height: 1.6;
+  background-image: url('../assets/fotos/conceito-de-reciclagem-plana-lay.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /*main{
@@ -96,9 +103,9 @@ a:hover {
 }
 
 .btn-outline {
-  background-color: transparent;
+  background-color: gren transparent;
   border: 2px solid var(--color-primary);
-  color: var(--color-primary);
+  color: white;
 }
 
 .btn-outline:hover {
@@ -241,7 +248,8 @@ nav a.active {
 .section-title {
   text-align: center;
   margin-bottom: 2rem;
-  color: #2E7D32;
+  color: var(--color-primary);
+  background-color: white;
 }
 
 .card:hover {
@@ -346,13 +354,14 @@ nav a.active {
 /* Seção Atividades Destaque */
 .atividades-destaque {
   padding: 60px 0;
-  background-color: white;
+  /*background-color: white;*/
 }
 
 .atividades-destaque h2 {
   text-align: center;
   margin-bottom: 40px;
   color: var(--color-primary);
+  background-color: white;
 }
 
 .atividades {
